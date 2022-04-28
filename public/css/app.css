@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.header-nav {
+  font-weight: 600;
+  justify-content: center;
+  padding: 0.05em;
+}
+.header-nav img {
+  padding: 0.5em 0;
+}
+.header-nav ul {
+  margin: 0 3rem;
+}
+.header-nav ul li {
+  position: relative;
+}
+.header-nav ul li.active::after {
+  content: "";
+  background-color: blue;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.multi {
+  max-width: 0;
+  max-height: 0;
+  border-left: 0.4em solid transparent;
+  border-right: 0.4em solid transparent;
+  border-top: 0.7em solid white;
+  margin: 0 0.2em;
+  margin-top: 0.3em;
+}
+
+.multi-black {
+  margin-top: 0.4em;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-top: 0.5em solid black;
+}
+
+.unstyled {
+  list-style: none;
+}
+.unstyled li {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.unstyled li a {
+  text-decoration: none;
+  color: black;
+}
+
+.blu-header-bar {
+  padding: 0.2em 3rem;
+  background-color: blue;
+  color: white;
+  justify-content: end;
+}
+.blu-header-bar > * {
+  margin: 0 3rem;
+}
+
+.search {
+  border-bottom: 2px solid blue;
+  align-self: center;
+  align-items: end;
+}
+.search input {
+  text-align: end;
+  margin: 0 0.2em;
+  outline: 0;
+}
+
+.jumbo {
+  max-height: 50vh;
+}
+.jumbo img {
+  height: 50vh;
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: black;
+}
+main .series-view {
+  flex-wrap: wrap;
+}
+main .series-view .card {
+  padding: 0.2em;
+  width: 16.6666666667%;
+}
+main .series-view .card .body {
+  position: relative;
+}
+main .series-view .card img {
+  width: 100%;
+}
+main .series-view .card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 30%;
+}
+main button {
+  margin: 2em auto;
+  padding: 0.5em 4em;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .label {
+  display: inline-block;
+  color: white;
+  background-color: rgb(47, 155, 192);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5em;
+  transform: translateY(-50%);
+}
+
+.bluebanner {
+  background-color: blue;
+  color: white;
+  padding: 1.5rem 0;
+}
+.bluebanner .img-container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  padding: 1em;
+}
+.bluebanner .img-container img {
+  max-width: 30%;
+  max-height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 0.5em;
+}
+
+footer {
+  background: no-repeat url("../images/footer-bg.jpg");
+  background-size: cover;
+}
+footer .top {
+  margin: 0 2em;
+  background: right/30% no-repeat url("../images/dc-logo-bg.png");
+}
+footer .top .container {
+  padding: 2rem 0;
+}
+footer .top .container ul {
+  list-style: none;
+  color: white;
+  padding-bottom: 1em;
+}
+footer .top .container a {
+  text-decoration: none;
+  color: grey;
+}
+footer .top .container > ul {
+  max-height: 20rem;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer .top .container p {
+  margin-top: 2em;
+  color: grey;
+}
+footer .top .container p a {
+  color: blue;
+}
+footer .bottom {
+  padding: 1em 0;
+  background-color: rgb(65, 61, 61);
+}
+footer .bottom .container {
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bottom button {
+  background-color: transparent;
+  border: 2px solid blue;
+  padding: 0.5em;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+footer .bottom .socials {
+  color: blue;
+  font-weight: 600;
+  align-items: center;
+}
+footer .bottom .socials > * {
+  margin: 0 0.5em;
+}

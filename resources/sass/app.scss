@@ -1,0 +1,219 @@
+//
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.header-nav{
+    font-weight: 600;
+    justify-content: center;
+    padding: .05em;
+    img{
+        padding: .5em 0;
+    }
+    ul{
+        margin: 0 3rem;
+        li{
+            position: relative;
+            &.active::after{
+                content: '';
+                background-color: blue;
+                height: 3px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}
+.multi{
+    max-width: 0;
+    max-height: 0;
+    border-left: .4em solid transparent;
+    border-right: .4em solid transparent;
+    border-top: .7em solid white;
+    margin: 0 .2em;
+    margin-top: .3em;
+}
+.multi-black{
+    margin-top: .4em;
+    border-left: .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-top: .5em solid black;
+}
+.unstyled{
+    list-style: none;
+    li{
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+.blu-header-bar{
+    padding: .2em 3rem;
+    background-color: blue;
+    color: white;
+    justify-content: end;
+    &>*{
+        margin: 0 3rem;
+    }
+}
+
+.search{
+    border-bottom: 2px solid blue;
+    align-self: center;
+    align-items: end;
+    input{
+        text-align: end;
+        margin: 0 .2em;
+        outline: 0;
+    }
+}
+
+
+.jumbo{
+    max-height: 50vh;
+    img{
+        height: 50vh;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main{
+    background-color: black;
+    .series-view{
+        flex-wrap: wrap;
+        .card{
+            padding: .2em;
+            width: calc(100% / 6);
+            .body{
+                position: relative;
+            }
+            img{
+                width: 100%;
+            }
+            .overlay{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: white;
+                background-color: black;
+                width: 100%;
+                height: 30%;
+            }
+        }
+    }
+    button{
+        margin: 2em auto;
+        padding: .5em 4em;
+        background-color: blue;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .label{
+        display: inline-block;
+        color: white;
+        background-color: rgb(47, 155, 192);
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: .5em;
+        transform: translateY(-50%);
+    }
+}
+
+.bluebanner{
+    background-color: blue;
+    color: white;
+    padding: 1.5rem 0;
+    .img-container{
+        width: calc(100% / 5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .7rem;
+        padding: 1em;
+        img{
+            max-width: 30%;
+            max-height: 70%;
+            object-fit: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+footer{
+    background: no-repeat url('../images/footer-bg.jpg');
+    background-size: cover;
+    .top{
+        margin: 0 2em;
+        background: right/30% no-repeat url('../images/dc-logo-bg.png');
+        .container{
+            padding: 2rem 0;
+            ul{
+                list-style: none;
+                color: white;
+                padding-bottom: 1em;
+            }
+            a{
+                text-decoration: none;
+                color: grey;
+            }
+            &>ul{
+                max-height: 20rem;
+                max-width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            p{
+                margin-top: 2em;
+                color: grey;
+                a{
+                    color: blue;
+                }
+            }
+        }
+    }
+    .bottom{
+        padding: 1em 0;
+        background-color: rgb(65, 61, 61);
+        .container{
+            justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            background-color: transparent;
+            border: 2px solid blue;
+            padding: .5em;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+        }
+        .socials{
+            color: blue;
+            font-weight: 600;
+            align-items: center;
+            &>*{
+                margin: 0 .5em;
+            }
+        }
+    }
+}
