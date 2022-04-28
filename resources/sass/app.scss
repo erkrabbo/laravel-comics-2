@@ -259,6 +259,10 @@ footer{
 
 .single-main{
     background: white;
+    .container{
+        display: flex;
+        padding: 3em 0;
+    }
     .white{
         color: white;
     }
@@ -286,5 +290,17 @@ footer{
         display: flex;
         align-items: center;
         border-left: 1px solid black;
+    }
+}
+.adv{
+    padding-left: 2em;
+    position: relative;
+    span{
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+    }
+    img{
+        width: 100%;
     }
 }

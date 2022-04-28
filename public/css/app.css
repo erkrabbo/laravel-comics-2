@@ -265,6 +265,10 @@ footer .bottom .socials > * {
 .single-main {
   background: white;
 }
+.single-main .container {
+  display: flex;
+  padding: 3em 0;
+}
 .single-main .white {
   color: white;
 }
@@ -292,4 +296,17 @@ footer .bottom .socials > * {
   display: flex;
   align-items: center;
   border-left: 1px solid black;
+}
+
+.adv {
+  padding-left: 2em;
+  position: relative;
+}
+.adv span {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+.adv img {
+  width: 100%;
 }

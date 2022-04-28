@@ -30,6 +30,10 @@
                         <p>{{ $sel['description'] }}</p>
                     </div>
                 </div>
+                <div class="adv">
+                    <span>ADVERTISMENT</span>
+                    <img src="{{ asset('images/adv.jpg') }}" alt="adv">
+                </div>
             </div>
         </div>
     </main>
