@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/characters', function () {
+    return view('guest.pages.characters');
+})->name('characters');
 
 Route::get('/', function () {
     $data = [
@@ -27,6 +30,3 @@ Route::get('/{id}', function ($id) {
     return view('guest.pages.comic-details', ['sel' => $selected]);
 });
 
-Route::get('/characters', function () {
-    return view('guest.pages.characters');
-})->name('characters');
