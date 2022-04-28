@@ -1,4 +1,7 @@
 @extends('guest.layouts.home')
+{{-- @dd(Route::current()) --}}
+{{-- @dd(url())) --}}
+{{-- @dd(Route::current()->Uri()) --}}
 
 @section('main')
     <main>
