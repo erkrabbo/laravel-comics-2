@@ -166,6 +166,28 @@ main .label {
   margin-right: 0.5em;
 }
 
+.greybanner {
+  background-color: lightgrey;
+  color: grey;
+  border-top: 1px solid grey;
+}
+.greybanner .img-container {
+  border: 1px solid grey;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  padding: 1em;
+}
+.greybanner .img-container img {
+  max-width: 30%;
+  max-height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 0.5em;
+}
+
 footer {
   background: no-repeat url("../images/footer-bg.jpg");
   background-size: cover;
@@ -321,13 +343,27 @@ footer .bottom .socials > * {
 .single-data {
   background-color: lightgrey;
 }
+.single-data .inte {
+  display: flex;
+  align-items: flex-start;
+}
 .single-data .container {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
+  padding: 2em 0;
+}
+.single-data .container tr {
+  border-bottom: 1px solid grey;
+}
+.single-data .container td {
+  padding: 0.5em;
 }
 .single-data .container table {
   width: 50%;
+  margin: 1em;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 .single-data .container table thead {
   text-align: left;

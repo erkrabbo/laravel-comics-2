@@ -46,7 +46,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Art By:</td>
+                            <td class="inte">Art By:</td>
                             <td>
                                 @foreach ($sel['artists'] as $artist)
                                     @if ($loop->last)
@@ -58,7 +58,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Written By:</td>
+                            <td class="inte">Written By:</td>
                             <td>
                                 @foreach ($sel['writers'] as $writer)
                                     @if ($loop->last)
@@ -79,15 +79,15 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Series:</td>
+                            <td class="inte">Series:</td>
                             <td>{{ strtoupper($sel['series']) }}</td>
                         </tr>
                         <tr>
-                            <td>U.S. Price:</td>
+                            <td class="inte">U.S. Price:</td>
                             <td>{{ $sel['price'] }}</td>
                         </tr>
                         <tr>
-                            <td>On Sale Date:</td>
+                            <td class="inte">On Sale Date:</td>
                             <td>{{ $sel['sale_date'] }}</td>
                         </tr>
                     </tbody>
@@ -95,4 +95,5 @@
             </div>
         </div>
     </main>
+    @include('guest.statics.greybanner')
 @endsection

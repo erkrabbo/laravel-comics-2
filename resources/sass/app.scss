@@ -158,6 +158,26 @@ main{
         }
     }
 }
+.greybanner{
+    background-color: lightgrey;
+    color: grey;
+    border-top: 1px solid grey;
+    .img-container{
+        border: 1px solid grey;
+        width: calc(100% / 5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .7rem;
+        padding: 1em;
+        img{
+            max-width: 30%;
+            max-height: 70%;
+            object-fit: contain;
+            margin-right: .5em;
+        }
+    }
+}
 
 footer{
     background: no-repeat url('../images/footer-bg.jpg');
@@ -315,12 +335,26 @@ footer{
 }
 .single-data{
     background-color: lightgrey;
+    .inte{
+        display: flex;
+        align-items: flex-start;
+    }
     .container{
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         justify-content: space-between;
+        padding: 2em 0;
+        tr{
+            border-bottom: 1px solid grey;
+        }
+        td{
+            padding: .5em;
+        }
         table{
             width: 50%;
+            margin: 1em;
+            table-layout: fixed;
+            border-collapse: collapse;
             thead{
                 text-align: left;
                 th{
