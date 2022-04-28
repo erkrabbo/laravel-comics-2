@@ -164,7 +164,7 @@ footer{
     background-size: cover;
     .top{
         margin: 0 2em;
-        background: right/30% no-repeat url('../images/dc-logo-bg.png');
+        background: right/40% no-repeat url('../images/dc-logo-bg.png');
         .container{
             padding: 2rem 0;
             ul{
@@ -215,5 +215,76 @@ footer{
                 margin: 0 .5em;
             }
         }
+    }
+}
+
+.single-header{
+    background-color: cyan;
+    padding-bottom: 2em;
+    .card{
+        color: white;
+        position: relative;
+        width: 200px;
+        margin-top: -15rem;
+        border: 1px solid white;
+        img{
+            width: 100%;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            .top{
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                background-color: blue;
+                padding: .5em;
+            }
+            .bottom{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                background-color: blue;
+                padding: .5em;
+            }
+        }
+    }
+}
+
+.single-main{
+    background: white;
+    .white{
+        color: white;
+    }
+    .overview{
+        width: 70%;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        background-color: green;
+        color: lightgreen;
+        padding: .5em;
+        border-bottom: 1px solid black;
+    }
+    .over{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        padding: 0 .5em;
+    }
+    .check-ava{
+        margin: -.5em;
+        padding: .5em;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid black;
     }
 }

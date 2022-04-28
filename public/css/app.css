@@ -172,7 +172,7 @@ footer {
 }
 footer .top {
   margin: 0 2em;
-  background: right/30% no-repeat url("../images/dc-logo-bg.png");
+  background: right/40% no-repeat url("../images/dc-logo-bg.png");
 }
 footer .top .container {
   padding: 2rem 0;
@@ -223,4 +223,73 @@ footer .bottom .socials {
 }
 footer .bottom .socials > * {
   margin: 0 0.5em;
+}
+
+.single-header {
+  background-color: cyan;
+  padding-bottom: 2em;
+}
+.single-header .card {
+  color: white;
+  position: relative;
+  width: 200px;
+  margin-top: -15rem;
+  border: 1px solid white;
+}
+.single-header .card img {
+  width: 100%;
+}
+.single-header .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.single-header .card .overlay .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  padding: 0.5em;
+}
+.single-header .card .overlay .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: blue;
+  padding: 0.5em;
+}
+
+.single-main {
+  background: white;
+}
+.single-main .white {
+  color: white;
+}
+.single-main .overview {
+  width: 70%;
+}
+.single-main .info {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  color: lightgreen;
+  padding: 0.5em;
+  border-bottom: 1px solid black;
+}
+.single-main .over {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0 0.5em;
+}
+.single-main .check-ava {
+  margin: -0.5em;
+  padding: 0.5em;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid black;
 }

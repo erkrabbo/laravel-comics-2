@@ -20,6 +20,13 @@ Route::get('/', function () {
     return view('guest.pages.comicsmain', $data);
 })->name('comics');
 
+Route::get('/{id}', function ($id) {
+    $db = collect(config('comics'));
+    $selected = $db->firstWhere('id', $id);
+    if($selected == null) abort(404);
+    return view('guest.pages.comic-details', ['sel' => $selected]);
+});
+
 Route::get('/characters', function () {
     return view('guest.pages.characters');
 })->name('characters');
