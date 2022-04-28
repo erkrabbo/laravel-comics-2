@@ -173,6 +173,7 @@ main .label {
 }
 .greybanner .img-container {
   border: 1px solid grey;
+  border-top: 0;
   width: 20%;
   display: flex;
   align-items: center;
@@ -186,6 +187,9 @@ main .label {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 0.5em;
+}
+.greybanner .img-container + .img-container {
+  border-left: 0;
 }
 
 footer {

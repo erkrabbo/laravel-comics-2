@@ -164,6 +164,7 @@ main{
     border-top: 1px solid grey;
     .img-container{
         border: 1px solid grey;
+        border-top: 0;
         width: calc(100% / 5);
         display: flex;
         align-items: center;
@@ -176,6 +177,9 @@ main{
             object-fit: contain;
             margin-right: .5em;
         }
+    }
+    .img-container+.img-container{
+        border-left: 0;
     }
 }
 

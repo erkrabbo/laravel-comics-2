@@ -9,12 +9,14 @@
             <div class="series-view flex">
                 @foreach ($series as $serie)
                     <div class="card">
-                        <div class="body">
-                            <img src="{{ $serie['thumb']}}" alt="">
-                            <div class="overlay">
-                                <span>{{ $serie['series'] }}</span>
+                        <a href="{{ route('comics').'/'.$serie['id'] }}">
+                            <div class="body">
+                                <img src="{{ $serie['thumb']}}" alt="">
+                                <div class="overlay">
+                                    <span>{{ $serie['series'] }}</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 @endforeach
                 <button>LOAD MORE</button>
