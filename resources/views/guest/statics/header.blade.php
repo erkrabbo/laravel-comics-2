@@ -13,7 +13,7 @@
         {{-- @dd(Route::current()->getName()) --}}
         <ul class="flex unstyled">
             <li class="{{ Request::is('characters') ? 'active' : '' }}"><a href="{{ route('characters') }}">CHARACTERS</a></li>
-            <li class="{{ Request::is('/') || Route::current()->Uri() == '{id}' ? 'active' : '' }}"><a href="{{ route('comics') }}">COMICS</a></li>
+            <li class="{{ Request::is('/') || Route::currentRouteName() == 'comic-details' ? 'active' : '' }}"><a href="{{ route('comics') }}">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">GAMES</a></li>

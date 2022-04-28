@@ -28,5 +28,5 @@ Route::get('/{id}', function ($id) {
     $selected = $db->firstWhere('id', $id);
     if($selected == null) abort(404);
     return view('guest.pages.comic-details', ['sel' => $selected]);
-});
+})->name('comic-details');
 
