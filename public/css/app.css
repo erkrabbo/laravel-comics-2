@@ -267,13 +267,20 @@ footer .bottom .socials > * {
 }
 .single-main .container {
   display: flex;
-  padding: 3em 0;
+  padding: 4rem 0;
 }
 .single-main .white {
   color: white;
 }
+.single-main .table p {
+  padding: 1em 0;
+  font-size: 1.2rem;
+}
 .single-main .overview {
   width: 70%;
+}
+.single-main .overview h2 {
+  font-size: 2rem;
 }
 .single-main .info {
   display: flex;
@@ -309,4 +316,22 @@ footer .bottom .socials > * {
 }
 .adv img {
   width: 100%;
+}
+
+.single-data {
+  background-color: lightgrey;
+}
+.single-data .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.single-data .container table {
+  width: 50%;
+}
+.single-data .container table thead {
+  text-align: left;
+}
+.single-data .container table thead th {
+  padding: 1em 0;
 }

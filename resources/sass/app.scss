@@ -261,13 +261,22 @@ footer{
     background: white;
     .container{
         display: flex;
-        padding: 3em 0;
+        padding: 4rem 0;
     }
     .white{
         color: white;
     }
+    .table{
+        p{
+            padding: 1em 0;
+            font-size: 1.2rem;
+        }
+    }
     .overview{
         width: 70%;
+        h2{
+            font-size: 2rem;
+        }
     }
     .info{
         display: flex;
@@ -302,5 +311,22 @@ footer{
     }
     img{
         width: 100%;
+    }
+}
+.single-data{
+    background-color: lightgrey;
+    .container{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        table{
+            width: 50%;
+            thead{
+                text-align: left;
+                th{
+                    padding: 1em 0;
+                }
+            }
+        }
     }
 }

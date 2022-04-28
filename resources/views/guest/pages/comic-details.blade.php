@@ -36,5 +36,63 @@
                 </div>
             </div>
         </div>
+        <div class="single-data">
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TALENT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Art By:</td>
+                            <td>
+                                @foreach ($sel['artists'] as $artist)
+                                    @if ($loop->last)
+                                        <span><a href="#">{{ $artist }}</a></span>
+                                    @else
+                                    <span><a href="#">{{ $artist }}</a>,</span>
+                                    @endif
+                                @endforeach
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Written By:</td>
+                            <td>
+                                @foreach ($sel['writers'] as $writer)
+                                    @if ($loop->last)
+                                        <span><a href="#">{{ $writer }}</a></span>
+                                    @else
+                                    <span><a href="#">{{ $writer }}</a>,</span>
+                                    @endif
+                                @endforeach
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SPECS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Series:</td>
+                            <td>{{ strtoupper($sel['series']) }}</td>
+                        </tr>
+                        <tr>
+                            <td>U.S. Price:</td>
+                            <td>{{ $sel['price'] }}</td>
+                        </tr>
+                        <tr>
+                            <td>On Sale Date:</td>
+                            <td>{{ $sel['sale_date'] }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
 @endsection
